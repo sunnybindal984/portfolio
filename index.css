@@ -2,11 +2,10 @@ body {
   margin: 0;
   background-color: #ffffff;
   padding: 0;
-  width: 1200px;
+  max-width: 1200px;
   color: #000;
 }
 * {
-  
   box-sizing: border-box;
   /* width: 100%; */
   font-family: sans-serif;
@@ -46,47 +45,37 @@ li {
 }
 .section1 {
   /* position: relative; */
- background-image: url(./WIN_20230926_13_27_01_Pro.jpg);
- height: auto;
-object-fit: contain;
-height: 100vh;
-opacity: .7;
- /* border: 2px solid red; */
+  background-image: url(./WIN_20230926_13_27_01_Pro.jpg);
+  /* height: auto; */
+  object-fit: contain;
+  height: 100vh;
+  opacity: 0.7;
+  /* border: 2px solid red; */
 }
-/* .section1 div {
-  border: 2px solid red;
-  /* position: absolute; */
-  /* margin: auto;
-  width: 300px;
-  height: 100px;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0; */
-} */
+
 .section2 h1 {
-  margin-top: 40px;
-  /* margin: 0 auto; */
-  /* text-align: center; */
-  font-size: xx-large;
+  text-align: center;
+  font-size: 3rem;
+  padding: 2rem 0 0px 0;
+  /* padding-bottom: -20px; */
+  margin: 0;
+  background-color: #d0c3c3;
+}
+.section2 {
+  background-color: #d0c3c3;
+  /* max-width: 1200px; */
+  /* margin: -27px; */
 }
 .resume {
   display: flex;
   justify-content: space-between;
-  gap: 40px;
-  padding: 70px;
-  margin-top: -70px;
-  /* flex-wrap: ; */
-  /* justify-self: center;  */
-  /* align-items: center; */
-}
-.flex {
-  /* display: flex; */
+  gap: 10px;
+  padding: 40px 70px;
+  /* margin-top: -70px; */
 }
 
 .resume h2 {
-  color: antiquewhite;
+  color: rgb(56, 230, 65);
   text-align: center;
 }
 
@@ -150,7 +139,7 @@ opacity: .7;
 .skillB {
   padding: 40px;
   display: flex;
-  
+
   /* justify-content: center; */
   justify-content: space-around;
 }
@@ -161,27 +150,64 @@ opacity: .7;
 }
 
 @keyframes example {
-  0%   { left:100%; top:40%;}
+  0% {
+    left: 100%;
+    top: 40%;
+  }
   /* 25%  { left:75%; top:40%;}
   50%  { left:60%; top:40%;}
   75%{left: 50%;top: 40%;} */
-  100% {left:40%; top:40%;}
-  
+  100% {
+    left: 40%;
+    top: 40%;
+  }
 }
-.section1 div{
-position: absolute;
-  animation-name:example;
-    animation-duration: 2s;
-animation-timing-function: ease-in;
-font-size: 2rem;
-height: 200px;
-/* transform: translate(-50%, -50%); */
+.section1 div {
+  position: absolute;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  font-size: 2rem;
+  width: 500px;
+  /* transform: translate(-50%, -50%); */
 
-   top: 40%;
-   left: 40%;
-  }
-  .section1{
-    position: relative;
-    overflow: hidden;
-    transition: ease-in;
-  }
+  top: 40%;
+  left: 40%;
+}
+.section1 h2 {
+  margin-left: -5rem;
+}
+.section1 {
+  position: relative;
+  overflow: hidden;
+  transition: ease-in;
+}
+.contact {
+  background-color: #d0c3c3;
+  padding: 20px;
+  background-image: url(./IMAGES/hanging-cards-contact-us-legoohdxv3t8zhd1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 90vh;
+  opacity: 0.7;
+}
+.contact h1,
+.contact h3 {
+  text-align: center;
+  font-size: 2rem;
+}
+.contact div {
+  /* position: fixed; */
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  z-index: 4;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+}
+.Skills h1 {
+  text-align: center;
+  font-size: 5rem;
+  margin: 2rem;
+}
