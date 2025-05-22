@@ -1,0 +1,279 @@
+body {
+  margin: 0;
+  background-color: #ffffff;
+  padding: 0;
+  width: 1200px;
+}
+* {
+  max-width: 1200px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+button {
+  border: 1px solid black;
+  color: #000;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+}
+ul {
+  display: flex;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  justify-content: space-evenly;
+}
+li {
+  list-style: none;
+  font-size: large;
+}
+a {
+  text-decoration: none;
+}
+li:hover {
+  scale: 1.2;
+  transition: 0.5s;
+}
+.section1 {
+  background-image: url(./IMAGES/3239480.webp);
+  background-size: cover;
+  color: white;
+  background-position: center;
+  height: 100vh;
+}
+
+.section2 h1 {
+  text-align: center;
+  /* size: 2rem; */
+}
+.section2 {
+  width: 1200px;
+}
+
+.resume {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 40px 70px;
+}
+
+.resume h2 {
+  color: rgb(56, 230, 65);
+  text-align: center;
+}
+
+.Education1 div,
+.Experience1 div {
+  gap: 20px;
+  height: 160px;
+  background-color: rgb(238, 240, 240);
+  padding: 0 10px;
+  border-radius: 10px;
+  width: 78vh;
+}
+.Education1,
+.Experience1 {
+  gap: 20px;
+  display: flex;
+  /* font-size: 1rem; */
+  flex-direction: column;
+}
+.Education1 div,
+.Experience1 div {
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(239, 238, 239, 0.1);
+}
+.Education1 div:hover,
+.Experience1 div:hover {
+  transform: scale(1.04);
+  box-shadow: 1px 1px 05px 0px;
+}
+.section2 h2 {
+  font-size: 2rem;
+}
+.Experience1 h4,
+.Education1 h4 {
+  display: flex;
+  color: gold;
+  margin-bottom: -10px;
+}
+.Education1 i,
+.Experience1 i {
+  width: 30px;
+  color: gold;
+}
+.Education1 h3,
+.Experience1 h3 {
+  color: gold;
+}
+.brief {
+  margin: -10px 0;
+}
+
+.Skills div {
+  background-color: white;
+}
+.Skills img {
+  width: 130px;
+  height: 150px;
+}
+.skillA,
+.skillB {
+  padding: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+.Skills img:hover {
+  border: 2px soild red;
+  transform: scale(1.2);
+  transition: ease-out 1s;
+}
+
+@keyframes example {
+  0% {
+    left: 100%;
+    top: 40%;
+  }
+  100% {
+    left: 40%;
+    top: 40%;
+  }
+}
+.section1 div {
+  position: absolute;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  font-size: 2rem;
+  width: 500px;
+  top: 40%;
+  left: 40%;
+}
+.section1 h2 {
+  margin-left: -5rem;
+}
+.section1 {
+  position: relative;
+  overflow: hidden;
+  transition: ease-in;
+}
+.contact {
+  background-color: #d0c3c3;
+  padding: 20px;
+  background-image: url(./IMAGES/hanging-cards-contact-us-legoohdxv3t8zhd1.jpg);
+  background-attachment: fixed;
+  position: relative;
+  background-size: cover;
+  height: 100vh;
+
+  /* backface-visibility: hidden; */
+  opacity: 0.9;
+}
+.contact h1,
+.contact h3 {
+  text-align: center;
+  /* opacity: 1; */
+
+  font-size: 2rem;
+}
+.contact div {
+  /* position: fixed; */
+  /* opacity: 0.9; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  /* gap: -30px; */
+}
+.contact1 {
+  background-color: #ffffff;
+  /* opacity: 0.9; */
+  width: 500px;
+  border-radius: 10px;
+  top: 10%;
+  position: absolute;
+  left: 30%;
+}
+.split-text-container {
+  display: flex;
+  gap: 20px;
+  font-size: 4rem;
+  padding: 40px;
+  font-weight: bold;
+  justify-content: center;
+  /* align-items: center; */
+  /* position: absolute; */
+  /* left: 40%; */
+  background-color: #000;
+  overflow: hidden;
+}
+
+.text-part {
+  display: inline-block;
+  position: relative;
+  transform: translateX(0);
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.text-part.left {
+  transform: translateX(-200%);
+  animation-name: slide-in-left;
+}
+
+.text-part.right {
+  transform: translateX(200%);
+  animation-name: slide-in-right;
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.projects {
+  padding: 40px;
+}
+.projects p {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.Skills {
+  padding-top: 20px;
+}
+.contact {
+  padding-top: 10px;
+}
+.projects {
+  background-image: url(./IMAGES/wp3144268.jpg);
+  color: gold;
+  opacity: 0.9;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+.projects h1 > a {
+  color: white;
+  opacity: 1;
+}
